@@ -8,19 +8,7 @@ const rangeSpan = document.getElementById('range-span');
 
 
 const colorize = () => {
-    if (text.value === 'blue'){
-        square.style.backgroundColor = 'blue';
-    }
-    if (text.value === 'green'){
-        square.style.backgroundColor = 'green';
-    }
-    if (text.value === 'yellow'){
-        square.style.backgroundColor = 'yellow';
-    }
-    if (text.value === 'red'){
-        square.style.backgroundColor = 'red';
-    }
-
+    square.style.backgroundColor = text.value;
 }
 
 eBtn.style.display = 'none';
@@ -35,3 +23,5 @@ const size = (event) => {
 btn.addEventListener('click', colorize);
 
 range.addEventListener('input', size);
+
+
